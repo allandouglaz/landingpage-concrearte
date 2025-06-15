@@ -12,7 +12,7 @@ function App() {
     <div
       className="font-sans text-gray-900 min-h-screen relative"
       style={{
-        backgroundImage: "images/fundo.jpg?auto=format&fit=crop&w=1000&q=80')",
+        backgroundImage: "url('/background.png')",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundRepeat: "repeat",
@@ -20,7 +20,7 @@ function App() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/80 pointer-events-none z-0"></div>
+      <div className="absolute inset-0 pointer-events-none z-0"></div>
       <div className="relative z-10">
         <Header />
         <Hero />
