@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import Differentials from "./components/Differentials";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="font-sans text-gray-900 min-h-screen relative"
+      style={{
+        backgroundImage: "images/fundo.jpg?auto=format&fit=crop&w=1000&q=80')",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "repeat",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-white/80 pointer-events-none z-0"></div>
+      <div className="relative z-10">
+        <Header />
+        <Hero />
+        <About />
+        <Services />
+        <Differentials />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
