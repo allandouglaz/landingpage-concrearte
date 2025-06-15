@@ -6,9 +6,9 @@ const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
 
   return (
-    <section id="contact" className="py-16 bg-white">
+    <section id="contact" className="py-16">
       <div className="max-w-2xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-blue-800">Fale Conosco</h2>
+        <h2 className="text-3xl font-bold mb-8 text-blue-900">Fale Conosco</h2>
         <form className="flex flex-col gap-4">
           <input
             type="text"
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
           />
           <button
             type="button"
-            className="bg-blue-700 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
+            className="bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
           >
             Enviar Mensagem
           </button>
